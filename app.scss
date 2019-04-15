@@ -6,14 +6,11 @@
 // Import the styles for each MDC Web component
 @import "@material/typography/mdc-typography";
 @import "@material/top-app-bar/mdc-top-app-bar";
-
+@import "@material/image-list/mdc-image-list";
 
 // Body
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding: 4rem 2rem 2rem;
 }
 
 // Reset List Styles
@@ -38,4 +35,26 @@ body {
 // Update Collapse Width
 .mdc-top-app-bar--short-collapsed.mdc-top-app-bar--short-has-action-item {
   width: 250px;
+}
+
+// Our own utility class to center these things
+.centered {
+  text-align: center;
+}
+
+// Image List
+.imageList {
+  @include mdc-image-list-masonry-columns(2);
+}
+
+@media (min-width: 599px) {
+  .imageList {
+    @include mdc-image-list-masonry-columns(4);
+  }
+}
+
+@media (min-width: 1020px) {
+  .imageList {
+    @include mdc-image-list-masonry-columns(6);
+  }
 }
