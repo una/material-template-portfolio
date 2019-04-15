@@ -1,0 +1,41 @@
+// Material Theming
+
+// Define theme variables before importing any MDC Web component styles
+// $mdc-theme-primary: midnightblue;
+
+// Import the styles for each MDC Web component
+@import "@material/typography/mdc-typography";
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+
+// Body
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+// Reset List Styles
+.navList {
+  list-style: none;
+  height: 2rem;
+  padding-left: 0;
+}
+
+// Style the list items side by side
+.navListItem {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+// Make the list items visible
+.navListLink {
+  color: white;
+  display: inline-block;
+}
+
+// Update Collapse Width
+.mdc-top-app-bar--short-collapsed.mdc-top-app-bar--short-has-action-item {
+  width: 250px;
+}
