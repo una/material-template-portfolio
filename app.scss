@@ -7,16 +7,24 @@
 @import "@material/typography/mdc-typography";
 @import "@material/top-app-bar/mdc-top-app-bar";
 @import "@material/image-list/mdc-image-list";
+@import "@material/textfield/mdc-text-field";
+@import "@material/textfield/character-counter/mdc-text-field-character-counter";
+@import "@material/button/mdc-button";
 
 // Body
 body {
-  padding: 4rem 2rem 2rem;
+  padding: 50px 32px 32px;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 // Reset List Styles
 .navList {
   list-style: none;
-  height: 2rem;
+  height: 32px;
   padding-left: 0;
 }
 
@@ -34,7 +42,7 @@ body {
 
 // Update Collapse Width
 .mdc-top-app-bar--short-collapsed.mdc-top-app-bar--short-has-action-item {
-  width: 250px;
+  width: 300px;
 }
 
 // Our own utility class to center these things
@@ -44,17 +52,63 @@ body {
 
 // Image List
 .imageList {
-  @include mdc-image-list-masonry-columns(2);
+  @include mdc-image-list-masonry-columns(1);
 }
 
-@media (min-width: 599px) {
+.mdc-image-list__supporting {
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  background: #fbf9ff;
+  padding: 16px;
+}
+
+// Set line heights in supporting content text
+.mdc-image-list__supporting > * {
+  margin: 0;
+}
+
+.mdc-image-list__supporting h2 {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 600px) {
   .imageList {
-    @include mdc-image-list-masonry-columns(4);
+    @include mdc-image-list-masonry-columns(2);
   }
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 1000px) {
   .imageList {
-    @include mdc-image-list-masonry-columns(6);
+    @include mdc-image-list-masonry-columns(2);
   }
+}
+
+@media (min-width: 1300px) {
+  .imageList {
+    @include mdc-image-list-masonry-columns(3);
+  }
+}
+// Contact Form
+.contactText {
+  max-width: 550px;
+  margin: 0 auto 32px;
+  line-height: 1.8;
+}
+
+.contactForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.contactForm > * + *{
+  margin-top: 24px;
+}
+
+.submitButton {
+  width: 150px;
+  align-self: flex-end;
 }

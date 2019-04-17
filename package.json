@@ -22,8 +22,10 @@
     "webpack-dev-server": "^3.1.11"
   },
   "dependencies": {
+    "@material/button": "^1.1.1",
     "@material/image-list": "^1.1.1",
     "@material/ripple": "^1.1.0",
+    "@material/textfield": "^1.1.1",
     "@material/top-app-bar": "^1.1.1",
     "@material/typography": "^1.0.0"
   },
