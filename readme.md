@@ -1,9 +1,7 @@
-# Material Starter Kit
-## A file template to help you get started with Material Components for the Web
+# Material Template: Portfolio
+### A sample template using Material Components for the web
 
 This file template sets up the `webpack` configuration and installs the `npm` packages required to get Material Components for the Web up and running. It simply displays a Material button that says "Hello World"!
-
-Fork this project on [GitHub](https://github.com/bonniezhou/material-starter-kit).
 
 ## Interested in learning more?
 Check out the [Material Components for the Web](https://github.com/material-components/material-components-web) documentation to add more components and styling.
