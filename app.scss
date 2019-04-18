@@ -17,7 +17,7 @@ body {
 }
 
 main {
-  max-width: 1400px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -74,19 +74,13 @@ main {
 
 @media (min-width: 600px) {
   .imageList {
-    @include mdc-image-list-masonry-columns(2);
+    @include mdc-image-list-masonry-columns(2, 32px);
   }
 }
 
 @media (min-width: 1000px) {
   .imageList {
-    @include mdc-image-list-masonry-columns(2);
-  }
-}
-
-@media (min-width: 1300px) {
-  .imageList {
-    @include mdc-image-list-masonry-columns(3);
+    @include mdc-image-list-masonry-columns(3, 32px);
   }
 }
 // Contact Form
