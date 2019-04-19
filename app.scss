@@ -10,6 +10,7 @@
 @import "@material/textfield/mdc-text-field";
 @import "@material/textfield/character-counter/mdc-text-field-character-counter";
 @import "@material/button/mdc-button";
+@import "@material/elevation/mdc-elevation";
 
 // Body
 body {
@@ -59,6 +60,18 @@ p {
   @include mdc-image-list-masonry-columns(1);
 }
 
+.listLink {
+  text-decoration: none;
+  transition:
+    mdc-elevation-transition-value(),
+    $mdc-elevation-transition-duration $mdc-elevation-transition-timing-function;
+  will-change: $mdc-elevation-property;
+}
+
+.listLink:hover {
+  @include mdc-elevation(5);
+}
+
 .mdc-image-list__supporting {
   flex-direction: column;
   text-align: left;
@@ -102,7 +115,7 @@ p {
 // About Page
 .aboutMe {
   display: flex;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   align-items: center;
   flex-direction: column;

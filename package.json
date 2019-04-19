@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@material/button": "^1.1.1",
+    "@material/elevation": "^1.1.0",
     "@material/image-list": "^1.1.1",
     "@material/ripple": "^1.1.0",
     "@material/textfield": "^1.1.1",
