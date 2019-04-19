@@ -21,6 +21,10 @@ main {
   margin: 0 auto;
 }
 
+p {
+  line-height: 1.8;
+}
+
 // Reset List Styles
 .navList {
   list-style: none;
@@ -72,22 +76,10 @@ main {
   margin-bottom: 8px;
 }
 
-@media (min-width: 600px) {
-  .imageList {
-    @include mdc-image-list-masonry-columns(2, 32px);
-  }
-}
-
-@media (min-width: 1000px) {
-  .imageList {
-    @include mdc-image-list-masonry-columns(3, 32px);
-  }
-}
 // Contact Form
 .contactText {
   max-width: 550px;
   margin: 0 auto 32px;
-  line-height: 1.8;
 }
 
 .contactForm {
@@ -105,4 +97,45 @@ main {
 .submitButton {
   width: 150px;
   align-self: flex-end;
+}
+
+// About Page
+.aboutMe {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutMe figure {
+  margin: 0;
+}
+
+.aboutMe img {
+  width: 100%;
+}
+
+.aboutMe > * {
+  flex: 1;
+}
+
+@media (min-width: 700px) {
+  .imageList {
+    @include mdc-image-list-masonry-columns(2, 32px);
+  }
+
+  .aboutMe {
+    flex-direction: row;
+  }
+
+  .aboutMe figure {
+    margin-right: 32px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .imageList {
+    @include mdc-image-list-masonry-columns(3, 32px);
+  }
 }
