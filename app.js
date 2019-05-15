@@ -12,7 +12,8 @@ const emailField = new MDCTextField(document.querySelector('.mdc-text-field--ema
 const messageField = new MDCTextField(document.querySelector('.mdc-text-field--message'));
 const characterCounter = new MDCTextFieldCharacterCounter(document.querySelector('.mdc-text-field-character-counter'));
 
-const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
+
+const selector = '.mdc-button';
 const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
   return new MDCRipple(el);
 });

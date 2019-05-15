@@ -1,0 +1,154 @@
+// My Own Variables
+$pageMax: 1200px;
+$contentMax: 900px;
+
+// Body
+body {
+  padding: 50px 32px 32px;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  max-width: $pageMax;
+  margin: 0 auto;
+}
+
+.contentMax {
+  max-width: $contentMax;
+}
+
+p {
+  line-height: 1.8;
+}
+
+// Reset List Styles
+.navList {
+  list-style: none;
+  height: 32px;
+  padding-left: 0;
+}
+
+// Style the list items side by side
+.navListItem {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+// Style Top App Bar
+.mdc-top-app-bar {
+  @include mdc-top-app-bar-fill-color(white);
+  @include mdc-top-app-bar-ink-color($mdc-theme-primary);
+  @include mdc-top-app-bar-icon-ink-color(#80868b);
+}
+
+.navListLink {
+  color: $mdc-theme-primary;
+}
+
+// Override Collapse Width
+.mdc-top-app-bar--short-collapsed.mdc-top-app-bar--short-has-action-item {
+  width: 300px;
+}
+
+// Our own utility class to center these things
+.centered {
+  text-align: center;
+}
+
+// Homepage Card Styles
+.cardContent {
+  padding: 16px;
+}
+
+.cardCategory {
+  margin: 0;
+}
+
+.cardTitle {
+  margin: 0 0 16px;
+}
+
+// Image List
+.imageList {
+  @include mdc-image-list-masonry-columns(1);
+  margin-top: 16px;
+}
+
+.listLink {
+  text-decoration: none;
+  transition:
+    mdc-elevation-transition-value(),
+    $mdc-elevation-transition-duration $mdc-elevation-transition-timing-function;
+  will-change: $mdc-elevation-property;
+}
+
+.listLink:hover {
+  @include mdc-elevation(5);
+}
+
+// Contact Form
+.contactText {
+  max-width: $contentMax;
+  margin: 0 auto 32px;
+}
+
+.contactForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: $contentMax;
+  margin: 0 auto;
+}
+
+.contactForm > * + *{
+  margin-top: 24px;
+}
+
+.submitButton {
+  width: 150px;
+  align-self: flex-end;
+}
+
+// About Page
+.aboutMe {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutMe figure {
+  margin: 0;
+}
+
+.aboutMe img {
+  width: 100%;
+}
+
+.aboutMe > * {
+  flex: 1;
+}
+
+@media (min-width: 700px) {
+  .imageList {
+    @include mdc-image-list-masonry-columns(2, 16px);
+  }
+
+  .aboutMe {
+    flex-direction: row;
+  }
+
+  .aboutMe figure {
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .imageList {
+    @include mdc-image-list-masonry-columns(3, 16px);
+  }
+}
