@@ -11,12 +11,12 @@
   <link rel="stylesheet" href="bundle.css">
 </head>
 
-<body class="mdc-typography">
+<body class="mdc-typography mdc-layout-grid">
   <header class="mdc-top-app-bar mdc-top-app-bar--short mdc-top-app-bar--short-has-action-item" style="top: 0px;">
       <div class="mdc-top-app-bar__row">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
           <a href="/"
-            class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded">home</a><span
+            class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded">gesture</a><span
             class="mdc-top-app-bar__title">My Portfolio</span></section>
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
           <ul class="navList">
@@ -29,156 +29,56 @@
     </header>
   <main>
     <h1 class="mdc-typography--headline2 centered">Work</h1>
-    <ul class="mdc-image-list mdc-image-list--masonry masonry-image-list imageList">
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/16.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
+    <ul class="cardList mdc-layout-grid__inner">
+      <li class="mdc-card mdc-layout-grid__cell">
+        <a href="project.html" class="mdc-card__primary-action" tabindex="0">
+          <img src="media/flowers3.jpg" alt="">
+          <div class="cardContent">
+            <h3 class="mdc-typography mdc-typography--overline cardCategory">Photography</h3>
+            <h2 class="mdc-typography mdc-typography--headline6 cardTitle">Flowers of Amsterdam</h2>
+            <div class="demo-card__secondary mdc-typography mdc-typography--body2">Flowers are an essential part of nature. Here they mix with city life.</div>
+          </div>
+        </a>
       </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/1.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
+      <li class="mdc-card mdc-layout-grid__cell">
+        <a href="project.html" class="mdc-card__primary-action" tabindex="0">
+          <img src="media/flowers5.jpg" alt="">
+          <div class="cardContent">
+            <h3 class="mdc-typography mdc-typography--overline cardCategory">Photography</h3>
+            <h2 class="mdc-typography mdc-typography--headline6 cardTitle">Flowers of Amsterdam</h2>
+            <div class="demo-card__secondary mdc-typography mdc-typography--body2">Flowers are an essential part of nature. Here they mix with city life.</div>
+          </div>
+        </a>
       </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/1.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
+      <li class="mdc-card mdc-layout-grid__cell">
+        <a href="project.html" class="mdc-card__primary-action" tabindex="0">
+          <img src="media/flowers2.png" alt="">
+          <div class="cardContent">
+            <h3 class="mdc-typography mdc-typography--overline cardCategory">Photography</h3>
+            <h2 class="mdc-typography mdc-typography--headline6 cardTitle">Flowers of Amsterdam</h2>
+            <div class="demo-card__secondary mdc-typography mdc-typography--body2">Flowers are an essential part of nature. Here they mix with city life.</div>
+          </div>
+        </a>
       </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/2.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
+      <li class="mdc-card mdc-layout-grid__cell">
+        <a href="project.html" class="mdc-card__primary-action" tabindex="0">
+          <img src="media/flowers4.jpg" alt="">
+          <div class="cardContent">
+            <h3 class="mdc-typography mdc-typography--overline cardCategory">Photography</h3>
+            <h2 class="mdc-typography mdc-typography--headline6 cardTitle">Flowers of Amsterdam</h2>
+            <div class="demo-card__secondary mdc-typography mdc-typography--body2">Flowers are an essential part of nature. Here they mix with city life.</div>
+          </div>
+        </a>
       </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/3.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
-      </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
-      </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/4.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
-      </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/3.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
-      </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/5.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
-      </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/4.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
-      </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/6.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
-      </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/5.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
-      </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/7.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
-      </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/6.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
-      </li>
-      <li class="mdc-image-list__item"><a href="project.html" class="listLink"><img class="mdc-image-list__image"
-          src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/7.jpg"
-          alt="Text label">
-        <div class="mdc-image-list__supporting">
-          <p class="mdc-typography--overline">Content Type Label</p>
-          <h2 class="mdc-typography--headline5">Name Here</h2>
-          <p class="mdc-typography--body2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
-      </a>
+      <li class="mdc-card mdc-layout-grid__cell">
+        <a href="project.html" class="mdc-card__primary-action" tabindex="0">
+          <img src="media/flowers6.png" alt="">
+          <div class="cardContent">
+            <h3 class="mdc-typography mdc-typography--overline cardCategory">Photography</h3>
+            <h2 class="mdc-typography mdc-typography--headline6 cardTitle">Flowers of Amsterdam</h2>
+            <div class="demo-card__secondary mdc-typography mdc-typography--body2">Flowers are an essential part of nature. Here they mix with city life.</div>
+          </div>
+        </a>
       </li>
     </ul>
   </main>

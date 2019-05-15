@@ -1,7 +1,8 @@
 // Material Theming
 
 // Define theme variables before importing any MDC Web component styles
-// $mdc-theme-primary: midnightblue;
+$mdc-theme-primary: white;
+$mdc-theme-secondary: hotpink;
 
 // Import the styles for each MDC Web component
 @import "@material/typography/mdc-typography";
@@ -11,15 +12,29 @@
 @import "@material/textfield/character-counter/mdc-text-field-character-counter";
 @import "@material/button/mdc-button";
 @import "@material/elevation/mdc-elevation";
+@import "@material/card/mdc-card";
+@import "@material/layout-grid/mdc-layout-grid";
+
+// My Own Variables
+$pageMax: 1200px;
+$contentMax: 900px;
 
 // Body
 body {
   padding: 50px 32px 32px;
 }
 
+img {
+  width: 100%;
+}
+
 main {
-  max-width: 1240px;
+  max-width: $pageMax;
   margin: 0 auto;
+}
+
+.contentMax {
+  max-width: $contentMax;
 }
 
 p {
@@ -39,12 +54,6 @@ p {
   margin: 0 8px;
 }
 
-// Make the list items visible
-.navListLink {
-  color: white;
-  display: inline-block;
-}
-
 // Update Collapse Width
 .mdc-top-app-bar--short-collapsed.mdc-top-app-bar--short-has-action-item {
   width: 300px;
@@ -55,9 +64,23 @@ p {
   text-align: center;
 }
 
+// Homepage Card Styles
+.cardContent {
+  padding: 16px;
+}
+
+.cardCategory {
+  margin: 0;
+}
+
+.cardTitle {
+  margin: 0 0 16px;
+}
+
 // Image List
 .imageList {
   @include mdc-image-list-masonry-columns(1);
+  margin-top: 16px;
 }
 
 .listLink {
@@ -72,26 +95,9 @@ p {
   @include mdc-elevation(5);
 }
 
-.mdc-image-list__supporting {
-  flex-direction: column;
-  text-align: left;
-  align-items: flex-start;
-  background: #fbf9ff;
-  padding: 16px;
-}
-
-// Set line heights in supporting content text
-.mdc-image-list__supporting > * {
-  margin: 0;
-}
-
-.mdc-image-list__supporting h2 {
-  margin-bottom: 8px;
-}
-
 // Contact Form
 .contactText {
-  max-width: 550px;
+  max-width: $contentMax;
   margin: 0 auto 32px;
 }
 
@@ -99,7 +105,7 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 550px;
+  max-width: $contentMax;
   margin: 0 auto;
 }
 
@@ -135,7 +141,7 @@ p {
 
 @media (min-width: 700px) {
   .imageList {
-    @include mdc-image-list-masonry-columns(2, 32px);
+    @include mdc-image-list-masonry-columns(2, 16px);
   }
 
   .aboutMe {
@@ -143,12 +149,12 @@ p {
   }
 
   .aboutMe figure {
-    margin-right: 32px;
+    margin-right: 16px;
   }
 }
 
 @media (min-width: 1000px) {
   .imageList {
-    @include mdc-image-list-masonry-columns(3, 32px);
+    @include mdc-image-list-masonry-columns(3, 16px);
   }
 }
