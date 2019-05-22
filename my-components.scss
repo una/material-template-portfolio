@@ -108,11 +108,15 @@ p {
   margin: 0 auto 32px;
 }
 
+.contactPage {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
 .contactForm {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: $contentMax;
   margin: 0 auto;
 }
 
@@ -128,7 +132,7 @@ p {
 // About Page
 .aboutMe {
   display: flex;
-  max-width: 900px;
+  max-width: $pageMax;
   margin: 0 auto;
   align-items: center;
   flex-direction: column;
@@ -146,7 +150,7 @@ p {
   flex: 1;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .imageList {
     @include mdc-image-list-masonry-columns(2, 16px);
   }
