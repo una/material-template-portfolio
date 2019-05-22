@@ -71,6 +71,20 @@ p {
   margin: 0 0 16px;
 }
 
+.cardList {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+  height: 100vw;
+  width: calc(100% - 16px);
+  padding: 0;
+}
+
+.card {
+  width: 33%;
+  margin: 0 16px 16px 0;
+}
+
 // Image List
 .imageList {
   @include mdc-image-list-masonry-columns(1);
