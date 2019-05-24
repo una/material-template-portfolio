@@ -71,6 +71,19 @@ p {
   margin: 0 0 16px;
 }
 
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 0 -16px 0;
+}
+
+.card {
+  flex: 1;
+  flex-basis: 400px;
+  margin: 0 16px 16px 0;
+}
+
 // Image List
 .imageList {
   @include mdc-image-list-masonry-columns(1);
@@ -95,11 +108,15 @@ p {
   margin: 0 auto 32px;
 }
 
+.contactPage {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
 .contactForm {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: $contentMax;
   margin: 0 auto;
 }
 
@@ -115,7 +132,7 @@ p {
 // About Page
 .aboutMe {
   display: flex;
-  max-width: 900px;
+  max-width: $pageMax;
   margin: 0 auto;
   align-items: center;
   flex-direction: column;
@@ -133,7 +150,7 @@ p {
   flex: 1;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .imageList {
     @include mdc-image-list-masonry-columns(2, 16px);
   }
